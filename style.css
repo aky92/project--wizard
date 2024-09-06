@@ -134,7 +134,7 @@ header .container-tagline{
 
 .section4{
     
-    height:60vh;
+  
     display:flex;
     flex-wrap: wrap;
     padding:30px 2%;
@@ -156,16 +156,21 @@ header .container-tagline{
 }
 
 .light label{
+    font-weight: 500;
     font-size: 25px;
     background-color: #2df538;
-    padding: 3px 11px;
-    line-height: 1.4;
+    line-height: 1.3;
+    border-radius: 3px;
+    border: 1px solid #2df538;
 }
 .dark label{
+        font-weight: 500;
     font-size: 25px;
-    background-color: white;
-    padding: 3px 11px;
-    line-height: 1.4;
+    color: #383838;
+    line-height: 1.3;
+    border-radius: 3px;
+    border: 1px solid white;
+    background-color:white;
 }
 .section4 .dark{
     background-color:#383838;
@@ -177,6 +182,24 @@ header .container-tagline{
     justify-content: space-between;
 }
 
+.sec4-innerfbox-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sec4-innerfbox-2 .link-light a{
+    color:#383838;
+}
+
+.sec4-innerfbox-2 .link-dark a{
+    color:#ffffff;
+}
+.sec4-innerfbox-2 a{
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
 .sec4-innerfbox img{
     width:300px;
     
@@ -186,4 +209,63 @@ header .container-tagline{
 }
 .dark img{
     mix-blend-mode: hard-light;
+}
+
+.section5{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 2%;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #e4e4e4;
+    margin: 0 99px;
+    border-radius: 15px;
+}
+
+.section5>div:nth-child(1){
+    width:65%;
+}
+
+.section5-fbox{
+ display: flex;
+ flex-direction: column;
+}
+
+.section5 .title{
+    font-size:2.1rem;
+}
+.section5 .cta-box{
+    font-size: 1.2rem;
+    background-color: #383838;
+    
+    width: fit-content;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 4px;
+}
+
+.section5 .cta-box a{
+    color: white;
+    text-decoration: none;
+}
+
+footer{
+    display: flex;
+    margin: 10px 95px;
+    justify-content: space-around;
+    background-color: #383838;
+    border-radius: 14px;
+    padding: 10px;
+    color:white;
+}
+
+footer>div{
+    width: 33.33%;
+    padding: 30px;
+    line-height: 1.4;
+    font-size: 1.1rem;
+    margin:20px 0;
+}
+footer>div:not(:last-child){
+    border-right:1px solid white;
 }
